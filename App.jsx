@@ -7,6 +7,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import HomeScreen from './screens/HomeScreen'
 import store from './store';
+import MovieDetailScreen from './screens/MovieDetailScreen';
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator initialRouteName="HomeScreen">
             <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown:false}} />
+            <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} options={{headerShown:false}} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
